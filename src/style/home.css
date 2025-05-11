@@ -1,0 +1,65 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: url("../image/imagem1.png") no-repeat center center / cover;
+}
+
+.home-info {
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+
+.home-info h1 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.home-info h2 {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+.home-info h3 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  font-size: 2.3rem;
+  padding: 1rem 4rem;
+  border: solid 2px aqua;
+  border-radius: 50px;
+  color: aqua;
+}
+
+.home .scroll-icon {
+  color: aqua;
+  font-size: 2.5rem;
+  position: absolute;
+  bottom: 20px;
+  animation: animation 0.6s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes animation {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(0.4em);
+  }
+}

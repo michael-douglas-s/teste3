@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifólio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/style/reset.css" />
+    <link rel="stylesheet" href="./src/style/variable.css" />
+    <link rel="stylesheet" href="./src/style/style-global.css" />
+    <link rel="stylesheet" href="./src/style/aside.css" />
+    <link rel="stylesheet" href="./src/style/home.css" />
+    <link rel="stylesheet" href="./src/style/about.css" />
+  </head>
+  <body>
+    <main class="grid-container">
+      <div class="hamburger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <aside class="sidebar">
+        <img
+          src="./src/image/1c67cec8-8ad4-4f7d-a080-d16b258e4a75.jpg"
+          alt=""
+        />
+
+        <h2>Michael Douglas</h2>
+        <nav>
+          <ul>
+            <li>
+              <a href="#home" class="menu-item active"
+                > <i class="fas fa-home"></i> Home<i
+                  class="fas fa-chevron-left indicator"
+                > </i
+              ></a>
+            </li>
+            <li>
+              <a href="#about" class="menu-item"
+                ><i class="fas fa-user"></i> Sobre
+                <i class="fas fa-chevron-left indicator"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="menu-item"
+                ><i class="fas fa-server"></i> Expertise
+                <i class="fas fa-chevron-left indicator"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="menu-item"
+                ><i class="fas fa-briefcase"></i> Porifólio
+                <i class="fas fa-chevron-left indicator"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="menu-item"
+                ><i class="fas fa-comments"></i> Contato
+                <i class="fas fa-chevron-left indicator"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-github-square"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </aside>
+
+      <section class="home" id="home">
+        <div class="home-info">
+          <h3 class="welcome">Bem-vindo</h3>
+          <h1>Eu sou Michael Douglas</h1>
+          <h2>E sou Desenvolvedor Web</h2>
+          <a href="#" class="btn">Contrate-me</a>
+        </div>
+        <i class="fas fa-chevron-down scroll-icon"></i>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container-about">
+          <h2 class="title-about">Sobre</h2>
+          <p class="description">
+            Olá! Meu nome é Michael, sou desenvolvedor e apaixonado por
+            tecnologia. Trabalho com desenvolvimento de sistemas e busco
+            sempre aprender novas linguagens, ferramentas e práticas para
+            criar soluções eficientes e criativas. Tenho interesse especial em
+            [coloque aqui sua área favorita, como front-end, back-end, mobile,
+            IA, etc.] e gosto de enfrentar desafios que me fazem evoluir como
+            profissional.
+          </p>
+          <div class="profile-about">
+            <div class="about-img ">
+              <img
+                src="./src/image/1c67cec8-8ad4-4f7d-a080-d16b258e4a75.jpg"
+                alt="imagem de perfil"
+              
+              />
+            </div>
+            <div class="about-info s">
+              <h3 class="title-info">Desenvolvedor web.</h3>
+              <p class="text-info">
+                Sou um profissional apaixonado por tecnologia, com experiência
+                em desenvolvimento web, inteligência artificial e simulação
+                aplicada à Indústria 4.0.
+              </p>
+
+              <div class="row-grid">
+                <div class="personal-info">
+                  <ul>
+                    <li>
+                      <strong>Idade:</strong>
+                      <span>31</span>
+                    </li>
+
+                    <li>
+                      <strong>Telefone:</strong>
+                      <span>+55 31 97127-0860</span>
+                    </li>
+                    <li>
+                      <strong>Cidade:</strong>
+                      <span>Minas Gerais, Brasil</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="personal-info">
+                  <ul>
+                    <li>
+                      <strong>Nome:</strong>
+                      <span>Michael Douglas Silva</span>
+                    </li>
+                    <li>
+                      <strong>E-mail:</strong> <span>michael@email.com</span>
+                    </li>
+                    <li>
+                      <strong>Freelance:</strong> <span>Disponível</span>
+                    </li>
+                  </ul>
+                </div>             
+              </div>
+                <div class="text-adicional">
+                  <p>
+                    Acredito que a tecnologia pode ser uma ponte para o
+                    desenvolvimento humano e social. Busco constantemente
+                    aprender novas ferramentas, colaborar com diferentes
+                    comunidades e contribuir para projetos que gerem valor
+                    real. Com foco em resultados, mantenho o compromisso com a
+                    qualidade, a ética e a inovação.
+                  </p>
+                </div>
+                <a class="btn-secondary" href="">Download CV</a>  
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

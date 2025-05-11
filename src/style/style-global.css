@@ -1,0 +1,58 @@
+html {
+  font-size: 62.5%;
+  background-color: #f4f4f4;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.grid-container {
+  background-color: var(--aside-fundo);
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "sidebar home"
+    "sidebar about";
+
+  min-height: 100vh;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.home {
+  grid-area: home;
+}
+
+.about {
+  grid-area: about;
+  min-height: 100vh;
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 3rem;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: var(--detail);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "home"
+      "about";
+  }
+}

@@ -1,0 +1,160 @@
+.about {
+  padding: 5rem 2rem;
+  background-color: #111113;
+  font-family: Arial, sans-serif;
+}
+
+.container-about {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.title-about {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: rgba(250, 250, 250, 0.9);
+  position: relative;
+  padding-bottom: 2rem;
+  display: inline-block; /* importante para o after acompanhar o tamanho do texto */
+}
+
+.title-about::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: aqua;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+}
+
+.description {
+  font-size: 1.7rem;
+  color: rgba(250, 250, 250, 0.9);
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 6rem;
+}
+
+.profile-about {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 2rem;
+}
+
+.about-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.about-info h3 {
+  font-size: 2.6rem;
+  color: aqua;
+}
+
+.title-info {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.about-info .text-info {
+  font-size: 1.6rem;
+  color: rgba(250, 250, 250, 0.9);
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.row-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+  margin-top: 4rem;
+}
+
+.row-grid .personal-info li {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.row-grid .personal-info li strong {
+  font-weight: 600;
+  margin-right: 8px;
+  color: rgba(250, 250, 250, 0.9);
+}
+
+.row-grid .personal-info li strong::before {
+  content: "\f054"; /* Código correto do ícone de seta */
+  font-family: "Font Awesome 5 Free"; /* Fonte correta */
+  font-weight: 900; /* Peso do ícone sólido (mais grosso) */
+  margin-right: 1rem;
+  color: aqua;
+}
+
+.row-grid .personal-info li span {
+  color: aqua;
+}
+
+.text-adicional {
+  color: rgba(250, 250, 250, 0.9);
+  line-height: 1.4;
+  text-align: justify;
+  margin: 2rem 0 1.4rem;
+}
+/* btn-secondary */
+
+.btn-secondary {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1.4rem 3rem;
+  border: solid 2px var(--aside-fundo);
+  border-radius: 50px;
+  background-color: var(--aside-fundo);
+  color: aqua;
+  display: inline-block;
+  transition: 0.5s ease-in-out;
+}
+
+.btn-secondary:hover {
+  background-color: aqua;
+  color: #000;
+}
+
+@media (max-width: 990px) {
+  .container-about {
+    max-width: 700px;
+  }
+  .profile-about {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-about {
+    max-width: 540px;
+  }
+
+  .row-grid {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  .row-grid li {
+    display: flex;
+  }
+  .row-grid li strong {
+    width: auto;
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding: 2rem;
+  }
+}
