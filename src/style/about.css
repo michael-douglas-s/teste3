@@ -134,7 +134,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .container-about {
     max-width: 540px;
   }
